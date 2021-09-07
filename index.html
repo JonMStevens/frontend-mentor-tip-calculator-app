@@ -28,7 +28,13 @@
           <div id="divBill" class="inputDiv">
             <label for="inputBill"> Bill </label>
             <img src="images/icon-dollar.svg" alt="icon-dollar" />
-            <input type="text" id="inputBill" value="0.00" />
+            <input
+              type="number"
+              id="inputBill"
+              min="0"
+              step="0.01"
+              value="0.00"
+            />
           </div>
           <div id="divTip">
             <span>Select Tip %</span>
@@ -39,14 +45,26 @@
               <button id="tipButton25">25%</button>
               <button id="tipButton50">50%</button>
               <button id="tipButtonCustom">Custom</button>
-              <input type="text" id="inputCustomTip" value="0" />
+              <input
+                type="number"
+                id="inputCustomTip"
+                min="0"
+                step="0.1"
+                value="0"
+              />
             </div>
           </div>
           <div id="divNumberOfPeople" class="inputDiv">
             <label for="inputNumberOfPeople">Number of People</label>
             <label for="inputNumberOfPeople" id="lblZero">Can't be zero</label>
             <img src="images/icon-person.svg" alt="icon-dollar" />
-            <input type="text" id="inputNumberOfPeople" value="0" />
+            <input
+              type="number"
+              id="inputNumberOfPeople"
+              step="1"
+              min="1"
+              value="1"
+            />
           </div>
         </div>
         <div id="results">

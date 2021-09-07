@@ -99,7 +99,8 @@ h1 {
   width: 10px;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='number'] {
   padding: 0.25rem;
 
   background-color: var(--neutral-lighter-grayish-cyan);
@@ -119,13 +120,17 @@ input[type='text'] {
 button:focus,
 button:active,
 input[type='text']:focus,
-input[type='text']:active {
+input[type='text']:active,
+input[type='number']:focus,
+input[type='number']:active {
   outline: none;
   box-shadow: 0 0 0 2px var(--accent-blue);
 }
 
 input[type='text'].error:focus,
-input[type='text'].error:active {
+input[type='text'].error:active,
+input[type='number'].error:focus,
+input[type='number'].error:active {
   box-shadow: 0 0 0 2px var(--error-orange);
 }
 
