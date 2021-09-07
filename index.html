@@ -22,40 +22,50 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+   
     </style>
   </head>
   <body>
     <main>
-      <h1>splitter</h1>
+      <h1>spli<br />tter</h1>
       <div id="container">
         <div id="controls">
-          <label for="inputBill"> Bill </label>
-          <input type="text" id="inputBill" />
-          <span>Select Tip %</span>
-          <button id="tipButton5">5%</button>
-          <button id="tipButton10">10%</button>
-          <button id="tipButton15">15%</button>
-          <button id="tipButton25">25%</button>
-          <button id="tipButton50">50%</button>
-          <button id="tipButtonCustom">Custom</button>
-          <label for="inputNumberOfPeople">Number of People</label>
-          <input type="text" id="inputNumberOfPeople" />
+          <div id="divBill" class="inputDiv">
+            <label for="inputBill"> Bill </label>
+            <img src="images/icon-dollar.svg" alt="icon-dollar" />
+            <input type="text" id="inputBill" value="0.00" />
+          </div>
+          <div id="divTip">
+            <span>Select Tip %</span>
+            <div id="buttonGrid">
+              <button id="tipButton5">5%</button>
+              <button id="tipButton10">10%</button>
+              <button id="tipButton15">15%</button>
+              <button id="tipButton25">25%</button>
+              <button id="tipButton50">50%</button>
+              <button id="tipButtonCustom">Custom</button>
+            </div>
+          </div>
+          <div id="divNumberOfPeople" class="inputDiv">
+            <label for="inputNumberOfPeople">Number of People</label>
+            <img src="images/icon-person.svg" alt="icon-dollar" />
+            <input type="text" id="inputNumberOfPeople" value="0" />
+          </div>
         </div>
         <div id="results">
-          <span class="resultLabel"
-            >Tip Amount <span class="resultSubLabel"> / person</span></span
-          >
-          <span class="resultLabel"
-            >Total <span class="resultSubLabel"> / person</span></span
-          >
-          <button id="reset">Reset</button>
+          <div class="resultsInfo">
+            <span class="resultLabel"
+              >Tip Amount <span class="resultSubLabel"> / person</span></span
+            >
+            <span id="valTipPerPerson" class="resultTotal">$0.00</span>
+          </div>
+          <div class="resultsInfo">
+            <span class="resultLabel"
+              >Total <span class="resultSubLabel"> / person</span></span
+            >
+            <span id="valTotalPerPerson" class="resultTotal">$0.00</span>
+          </div>
+          <button id="btnReset">Reset</button>
         </div>
       </div>
     </main>
