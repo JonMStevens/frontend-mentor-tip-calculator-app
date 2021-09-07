@@ -48,14 +48,18 @@ h1 {
 
 #container {
   display: flex;
-  width: max-content;
-
+  flex-flow: row wrap;
   background-color: var(--neutral-white);
   border-radius: 1rem;
+  width: 100%;
+
+  /* iPad Pro 12.9" width but basically arbitrary */
+  max-width: 1024px;
 }
 
 #container > div {
   margin: 1rem;
+  flex: 1;
 }
 
 #controls {
@@ -71,6 +75,7 @@ h1 {
   color: var(--neutral-darker-grayish-cyan);
   font-size: 0.6rem;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .inputDiv {
@@ -109,7 +114,7 @@ h1 {
 }
 
 button {
-  width: 3.5rem;
+  width: 100%;
   padding: 0.3rem 0 0.3rem 0;
 
   color: var(--neutral-white);
@@ -131,7 +136,7 @@ button {
 #results {
   display: flex;
   flex-flow: column;
-
+  justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
 
@@ -148,6 +153,7 @@ button {
 .resultsInfo > span {
   color: var(--neutral-white);
   font-size: 0.5rem;
+  white-space: nowrap;
 }
 .resultsInfo > span > span {
   display: block;
@@ -173,10 +179,32 @@ button {
 
 .attribution {
   position: absolute;
-  bottom: 0;
+  top: 0;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  #buttonGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 366px) {
+  #container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  #buttonGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
