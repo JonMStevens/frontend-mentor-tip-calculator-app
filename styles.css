@@ -145,11 +145,11 @@ button {
   justify-content: space-between;
 }
 
-.resultLabel {
+.resultsInfo > span {
   color: var(--neutral-white);
   font-size: 0.5rem;
 }
-.resultSubLabel {
+.resultsInfo > span > span {
   display: block;
   color: var(--neutral-dark-grayish-cyan);
 }
