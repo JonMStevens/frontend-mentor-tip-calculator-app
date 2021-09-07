@@ -8,6 +8,8 @@
   --neutral-lighter-grayish-cyan: hsl(189, 41%, 97%);
   --neutral-white: hsl(0, 0%, 100%);
 
+  --accent-blue: hsl(172, 61%, 76%);
+  --error-orange: hsl(16, 81%, 75%);
   --std-border-radius: 0.15rem;
 
   font-family: 'Space Mono', monospace;
@@ -84,6 +86,12 @@ h1 {
   position: relative;
 }
 
+#controls #lblZero {
+  position: absolute;
+  right: 0;
+  color: var(--error-orange);
+}
+
 .inputDiv img {
   position: absolute;
   top: 1.45rem;
@@ -91,7 +99,7 @@ h1 {
   width: 10px;
 }
 
-.inputDiv input[type='text'] {
+input[type='text'] {
   padding: 0.25rem;
 
   background-color: var(--neutral-lighter-grayish-cyan);
@@ -105,6 +113,20 @@ h1 {
 
   border: none;
   border-radius: var(--std-border-radius);
+
+  cursor: pointer;
+}
+button:focus,
+button:active,
+input[type='text']:focus,
+input[type='text']:active {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-blue);
+}
+
+input[type='text'].error:focus,
+input[type='text'].error:active {
+  box-shadow: 0 0 0 2px var(--error-orange);
 }
 
 #buttonGrid {
@@ -126,6 +148,14 @@ button {
 
   border: none;
   border-radius: var(--std-border-radius);
+
+  cursor: pointer;
+}
+
+#container button:hover,
+#container button:active {
+  color: var(--neutral-very-dark-cyan);
+  background-color: var(--accent-blue);
 }
 
 #tipButtonCustom {
@@ -133,6 +163,11 @@ button {
   color: var(--neutral-dark-grayish-cyan);
 }
 
+#inputCustomTip {
+  display: none;
+}
+
+/***** results section start *****/
 #results {
   display: flex;
   flex-flow: column;
