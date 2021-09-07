@@ -195,7 +195,7 @@ button {
   color: var(--neutral-dark-grayish-cyan);
 }
 
-.resultTotal {
+.resultsInfo .resultTotal {
   color: var(--primary-strong-cyan);
   font-weight: 700;
   font-size: 1.2rem;
