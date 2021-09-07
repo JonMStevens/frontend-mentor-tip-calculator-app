@@ -239,6 +239,17 @@ button {
     flex-flow: column;
   }
 
+  /* todo: there might be a cleaner way to do this */
+  /* labels clash at this size */
+  #controls #lblZero {
+    position: static;
+  }
+
+  /* labels clash at this size */
+  #divNumberOfPeople img {
+    top: 2.67rem;
+  }
+
   #buttonGrid {
     grid-template-columns: repeat(1, 1fr);
   }
