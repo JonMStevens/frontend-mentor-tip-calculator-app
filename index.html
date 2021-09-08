@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <script src="scripts.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
 
     <style>
@@ -33,24 +34,28 @@
               id="inputBill"
               min="0"
               step="0.01"
-              value="0.00"
+              value="0"
+              onchange="inputBillOnChange()"
             />
           </div>
           <div id="divTip">
             <span>Select Tip %</span>
             <div id="buttonGrid">
-              <button id="tipButton5">5%</button>
-              <button id="tipButton10">10%</button>
-              <button id="tipButton15">15%</button>
-              <button id="tipButton25">25%</button>
-              <button id="tipButton50">50%</button>
-              <button id="tipButtonCustom">Custom</button>
+              <button onclick="btnTipClick(event)" value="5">5%</button>
+              <button onclick="btnTipClick(event)" value="10">10%</button>
+              <button onclick="btnTipClick(event)" value="15">15%</button>
+              <button onclick="btnTipClick(event)" value="25">25%</button>
+              <button onclick="btnTipClick(event)" value="50">50%</button>
+              <button id="btnTipCustom" onclick="btnCustomTipClick()">
+                Custom
+              </button>
               <input
                 type="number"
                 id="inputCustomTip"
                 min="0"
                 step="0.1"
                 value="0"
+                onchange="inputCustomTipOnChange()"
               />
             </div>
           </div>
@@ -64,6 +69,7 @@
               step="1"
               min="1"
               value="1"
+              onchange="inputNumberOfPeopleOnChange()"
             />
           </div>
         </div>
@@ -76,7 +82,7 @@
             <span>Total <span> / person</span></span>
             <span id="valTotalPerPerson" class="resultTotal">$0.00</span>
           </div>
-          <button id="btnReset">Reset</button>
+          <button id="btnReset" onclick="btnResetOnClick()">Reset</button>
         </div>
       </div>
     </main>

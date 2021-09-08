@@ -87,6 +87,7 @@ h1 {
 }
 
 #controls #lblZero {
+  display: none;
   position: absolute;
   right: 0;
   color: var(--error-orange);
@@ -127,10 +128,7 @@ input[type='number']:active {
   box-shadow: 0 0 0 2px var(--accent-blue);
 }
 
-input[type='text'].error:focus,
-input[type='text'].error:active,
-input[type='number'].error:focus,
-input[type='number'].error:active {
+input[type='number'].error {
   box-shadow: 0 0 0 2px var(--error-orange);
 }
 
@@ -156,14 +154,14 @@ button {
 
   cursor: pointer;
 }
-
 #container button:hover,
-#container button:active {
+#container button:active,
+button[data-selected] {
   color: var(--neutral-very-dark-cyan);
   background-color: var(--accent-blue);
 }
 
-#tipButtonCustom {
+#btnTipCustom {
   background-color: var(--neutral-lighter-grayish-cyan);
   color: var(--neutral-dark-grayish-cyan);
 }
