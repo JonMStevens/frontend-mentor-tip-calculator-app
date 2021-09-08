@@ -71,7 +71,7 @@ A lot of things I could improve here:
 - [](https://www.youtube.com/watch?v=WIP1czLm3CY&t=262s) - Nice demonstartion about the JavaScript "in" keyword, which can be used to validate passed parameters.
 - [](https://flaviocopes.com/how-to-format-number-as-currency-javascript/) - I basically fully copy-pasted this for my currency formatting.
 - [](https://johnresig.com/blog/html-5-data-attributes/#postcomment) - An old, but good briefing on how to do custom data attributes. I used this to determine selected buttons.
-
+- [](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) - stack overflow thread about preventing non-numerical inputs in input fields.
 
 ## Author
 - Frontend Mentor - [@JonMStevens](https://www.frontendmentor.io/profile/JonMStevens)

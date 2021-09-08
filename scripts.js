@@ -45,6 +45,15 @@ function btnResetOnClick() {
 }
 
 /* text input events */
+function supressNonNumericalInput(event) {
+  if (!event || !'which' in event) {
+    return;
+  }
+
+  if (event.which < 48 || event.which > 57) {
+    event.preventDefault();
+  }
+}
 function inputBillOnChange() {
   recalculateTotals();
 }
