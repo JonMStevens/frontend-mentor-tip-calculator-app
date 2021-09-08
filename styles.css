@@ -101,7 +101,6 @@ h1 {
   width: 10px;
 }
 
-input[type='text'],
 input[type='number'] {
   padding: 0.25rem;
 
@@ -121,8 +120,6 @@ input[type='number'] {
 }
 button:focus,
 button:active,
-input[type='text']:focus,
-input[type='text']:active,
 input[type='number']:focus,
 input[type='number']:active {
   outline: none;
