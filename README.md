@@ -65,7 +65,7 @@ A lot of things I could improve here:
 
 - [CSS Tricks - Media Queries for Standard Devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) - A nice guide for standard size for common devices. I referenced this to help decide where I should put a breakpoint.
 - [Team Treehouse - How do I put icons inside of input fields?](https://teamtreehouse.com/community/how-do-i-put-icons-inside-of-input-fields) - This thread basically told me how to put those icons in the input fields.
-- [MDN Web Docs - <input type="number">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) - Reference for what input to use in order to accept numbers
+- [MDN Web Docs input type="number"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) - Reference for what input to use in order to accept numbers
 - [Mozilla Developer - How to REVERT CSS — get back to default browser style](https://www.youtube.com/watch?v=GAjoVRmipcU) - A good, quick video about the difference between initial, unset, and revert values.
 - [Web Dev Simplified - 5 MORE Must Know JavaScript Features That Almost Nobody Knows](https://www.youtube.com/watch?v=WIP1czLm3CY&t=262s) - Nice demonstration about the JavaScript "in" keyword, which can be used to validate passed parameters.
 - [Flavio Copes -How to format a number as a currency value in JavaScript](https://flaviocopes.com/how-to-format-number-as-currency-javascript/) - I basically fully copy-pasted this for my currency formatting.
