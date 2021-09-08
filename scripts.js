@@ -40,6 +40,7 @@ function btnResetOnClick() {
   if (inputNumberOfPeople && 'value' in inputNumberOfPeople)
     inputNumberOfPeople.value = 1;
 
+  hideLessThanOnePersonError();
   clearSelectedButton();
 }
 
