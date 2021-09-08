@@ -35,7 +35,8 @@ main {
   justify-content: space-evenly;
 
   min-width: 100vw;
-  min-height: 100vh;
+  /* keep some space to fit the attribution */
+  min-height: calc(100vh - 20px);
 
   padding: 1rem;
 }
@@ -183,6 +184,7 @@ button[data-selected] {
 }
 .resultsInfo {
   display: flex;
+  flex-flow: row wrap;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
@@ -216,10 +218,9 @@ button[data-selected] {
 }
 
 .attribution {
-  position: absolute;
-  top: 0;
+  position: relative;
+  min-height: 20px;
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
