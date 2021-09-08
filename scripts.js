@@ -113,7 +113,7 @@ function validateTextInput(ele) {
 }
 /* calculate totals functions */
 
-/* todo: using this formatter for rounding causes issues:
+/* using this formatter for rounding can cause some ambiguity:
 e.g.
 Bill:$1000
 Tip:10% ($100)
@@ -163,7 +163,6 @@ function recalculateTotals() {
   const grandTotal = bill + tip;
   const totalperPerson = grandTotal / numberOfPeople;
 
-  /* todo rounding */
   const valTipPerPerson = document.getElementById('valTipPerPerson');
   const valTotalPerPerson = document.getElementById('valTotalPerPerson');
 
@@ -180,7 +179,7 @@ function getTipPercent() {
 
   const inputCustomTip = document.getElementById('inputCustomTip');
   if (
-    value !== null &&
+    value === null &&
     inputCustomTip &&
     inputCustomTip.style.display !== 'none' &&
     'value' in inputCustomTip
