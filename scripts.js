@@ -45,6 +45,8 @@ function btnResetOnClick() {
 }
 
 /* text input events */
+
+/* credit: https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number */
 function supressNonNumericalInput(event) {
   if (!event || !'which' in event) {
     return;
@@ -138,6 +140,8 @@ Bill + Tip = $1100
 My solution is to show a maximum of a 3rd decimal if needed,
  and leave the decision about what to do about that last penny to the user
  */
+
+ /* credit: https://flaviocopes.com/how-to-format-number-as-currency-javascript/ */
 const moneyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
