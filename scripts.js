@@ -52,6 +52,23 @@ function supressNonNumericalInput(event) {
     return;
   }
 
+  /* decimal point */
+  if (
+    event.which === 46 &&
+    'currentTarget' in event &&
+    'step' in event.currentTarget
+  ) {
+    /* prevent decimals in numbers with a non-decimal step value */
+    const step = parseFloat(event.currentTarget.step);
+    console.log(step);
+    if (!isNaN(step) && step >= 1) {
+      event.preventDefault();
+    }
+
+    return;
+  }
+
+  /* reject non-numbers */
   if (event.which < 48 || event.which > 57) {
     event.preventDefault();
   }
@@ -141,7 +158,7 @@ My solution is to show a maximum of a 3rd decimal if needed,
  and leave the decision about what to do about that last penny to the user
  */
 
- /* credit: https://flaviocopes.com/how-to-format-number-as-currency-javascript/ */
+/* credit: https://flaviocopes.com/how-to-format-number-as-currency-javascript/ */
 const moneyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
