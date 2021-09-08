@@ -106,7 +106,7 @@ input[type='number'] {
   padding: 0.25rem;
 
   background-color: var(--neutral-lighter-grayish-cyan);
-  color: var(--neutral-very-dark-cyan);
+  color: var(--neutral-dark-grayish-cyan);
 
   text-align: right;
 
