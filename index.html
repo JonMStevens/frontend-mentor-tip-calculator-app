@@ -28,7 +28,6 @@
         <div id="controls">
           <div id="divBill" class="inputDiv">
             <label for="inputBill"> Bill </label>
-            <img src="images/icon-dollar.svg" alt="icon-dollar" />
             <input
               type="number"
               id="inputBill"
@@ -38,6 +37,7 @@
               onkeypress="supressNonNumericalInput(event)"
               onchange="inputBillOnChange()"
             />
+            <img src="images/icon-dollar.svg" alt="icon-dollar" />
           </div>
           <div id="divTip">
             <span>Select Tip %</span>
@@ -64,7 +64,6 @@
           <div id="divNumberOfPeople" class="inputDiv">
             <label for="inputNumberOfPeople">Number of People</label>
             <label for="inputNumberOfPeople" id="lblZero">Can't be zero</label>
-            <img src="images/icon-person.svg" alt="icon-dollar" />
             <input
               type="number"
               id="inputNumberOfPeople"
@@ -74,6 +73,7 @@
               onkeypress="supressNonNumericalInput(event)"
               onchange="inputNumberOfPeopleOnChange()"
             />
+            <img src="images/icon-person.svg" alt="icon-dollar" />
           </div>
         </div>
         <div id="results">

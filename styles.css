@@ -247,7 +247,7 @@ button[data-selected] {
   }
 
   /* labels clash at this size */
-  #divNumberOfPeople img {
+  #inputNumberOfPeople.error + img {
     top: 2.67rem;
   }
 
