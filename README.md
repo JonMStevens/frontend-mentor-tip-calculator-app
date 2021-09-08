@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![Screenshot 2021-09-08 at 02-00-14 Frontend Mentor Tip calculator app](https://user-images.githubusercontent.com/32622980/132454667-3027d6a1-aa61-4f87-9af7-0700007ef6c2.png)
 
 ### Links
 
