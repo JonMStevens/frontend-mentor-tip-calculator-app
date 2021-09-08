@@ -56,8 +56,8 @@ h1 {
   border-radius: 1rem;
   width: 100%;
 
-  /* iPad Pro 12.9" width but basically arbitrary */
-  max-width: 1024px;
+  /* width of iPad Pro 9.7" (and older ipads) but basically arbitrary */
+  max-width: 768px;
 }
 
 #container > div {
