@@ -254,4 +254,13 @@ button[data-selected] {
   #buttonGrid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .resultsInfo {
+    flex-flow: column;
+    gap: 0;
+    align-items: baseline;
+  }
+  #btnReset {
+    margin-top: 0;
+  }
 }
