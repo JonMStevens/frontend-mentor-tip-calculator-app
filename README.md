@@ -15,8 +15,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -61,17 +59,15 @@ A lot of things I could improve here:
 
 - I need to learn how to organize my JavaScript
 - I ran into some issues with css specificity. It may be worth learning BEM.
-- I thought it wouldn't be worth the overhead to set up a framework for this small project, but it may bwe worth it for the organization.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I thought it wouldn't be worth the overhead to set up a framework for this small project, but it may be worth it for the organization.
 
 ### Useful resources
 
 - [CSS Tricks - Media Queries for Standard Devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/) - A nice guide for standard size for common devices. I referenced this to help decide where I should put a breakpoint.
-- [Team Tree House - How do I put icons inside of input fields?](https://teamtreehouse.com/community/how-do-i-put-icons-inside-of-input-fields) - This thread basically told me how to put those icons in the input fields.
+- [Team Treehouse - How do I put icons inside of input fields?](https://teamtreehouse.com/community/how-do-i-put-icons-inside-of-input-fields) - This thread basically told me how to put those icons in the input fields.
 - [MDN Web Docs - <input type="number">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number) - Reference for what input to use in order to accept numbers
-- [Mozilla Developer - How to REVERT CSS — get back to default browser style](https://www.youtube.com/watch?v=GAjoVRmipcU) - A good, quick video about the difference initial, unset, and revert values.
-- [Web Dev Simplified - 5 MORE Must Know JavaScript Features That Almost Nobody Knows](https://www.youtube.com/watch?v=WIP1czLm3CY&t=262s) - Nice demonstartion about the JavaScript "in" keyword, which can be used to validate passed parameters.
+- [Mozilla Developer - How to REVERT CSS — get back to default browser style](https://www.youtube.com/watch?v=GAjoVRmipcU) - A good, quick video about the difference between initial, unset, and revert values.
+- [Web Dev Simplified - 5 MORE Must Know JavaScript Features That Almost Nobody Knows](https://www.youtube.com/watch?v=WIP1czLm3CY&t=262s) - Nice demonstration about the JavaScript "in" keyword, which can be used to validate passed parameters.
 - [Flavio Copes -How to format a number as a currency value in JavaScript](https://flaviocopes.com/how-to-format-number-as-currency-javascript/) - I basically fully copy-pasted this for my currency formatting.
 - [John Resig - HTML 5 data- Attributes](https://johnresig.com/blog/html-5-data-attributes/#postcomment) - An old, but good briefing on how to do custom data attributes. I used this to determine selected buttons.
 - [Stack Overflow - Prevent typing non-numeric in input type number](https://stackoverflow.com/questions/19966417/prevent-typing-non-numeric-in-input-type-number) - stack overflow thread about preventing non-numerical inputs in input fields. Again
