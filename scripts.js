@@ -113,19 +113,26 @@ function validateTextInput(ele) {
 }
 /* calculate totals functions */
 
-/* todo: this formatter causes issues with rounding:
-e.g. $1000 / 10% tip / 3 people
+/* todo: using this formatter for rounding causes issues:
+e.g.
+Bill:$1000
+Tip:10% ($100)
+People: 3
 $100 tip / 3 shows $33.33.
 33.33 * 3 = 99.99 leaving one penny unaccounted.
 
-$1100 total / 3 shows $366.67
-366.67 * 3 = 1100.01 confusingly leaving one extra penney 
+Bill + Tip = $1100
+1100/ 3 = 366.67
+366.67 * 3 = 1100.01 confusingly leaving one extra penny 
 
+My solution is to show a maximum of a 3rd decimal if needed,
+ and leave the decision about what to do about that last penny to the user
  */
 const moneyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
-  minimumFractionDigits: 2
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 3
 });
 
 function recalculateTotals() {
